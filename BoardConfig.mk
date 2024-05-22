@@ -220,7 +220,7 @@ TW_H_OFFSET := -99
 TW_EXCLUDE_APEX := true
 TW_HAS_EDL_MODE := true
 TW_BACKUP_EXCLUSIONS := /data/fonts
-#TW_LOAD_VENDOR_BOOT_MODULES := true
+TW_LOAD_VENDOR_BOOT_MODULES := true
 
 # Haptic
 TW_SUPPORT_INPUT_AIDL_HAPTICS := true
@@ -238,3 +238,5 @@ SOONG_CONFIG_ufsbsg_ufsframework := bsg
 
 # The path to a temperature sensor
 TW_CUSTOM_CPU_TEMP_PATH := "/sys/devices/virtual/thermal/thermal_zone50/temp"
+
+PB_TORCH_PATH := /sys/class/leds/led:torch_0
