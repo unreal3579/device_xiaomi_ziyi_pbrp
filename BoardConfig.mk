@@ -239,4 +239,4 @@ SOONG_CONFIG_ufsbsg_ufsframework := bsg
 # The path to a temperature sensor
 TW_CUSTOM_CPU_TEMP_PATH := "/sys/devices/virtual/thermal/thermal_zone50/temp"
 
-PB_TORCH_PATH := /sys/class/leds/led:torch_0
+PB_TORCH_PATH := "/sys/class/leds/led:torch_0"
