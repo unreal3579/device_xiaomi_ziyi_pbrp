@@ -152,7 +152,7 @@ RECOVERY_SDCARD_ON_DATA     := true
 TW_NO_EXFAT_FUSE            := true
 TW_HAS_EDL_MODE             := true
 TW_BACKUP_EXCLUSIONS        := /data/fonts
-TW_LOAD_VENDOR_BOOT_MODULES := true
+#TW_LOAD_VENDOR_BOOT_MODULES:= true
 TW_NO_SCREEN_BLANK          := true
 
 #PB
