@@ -28,6 +28,11 @@ TARGET_OTA_ASSERT_DEVICE := ziyi, ziyigl
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl-qti.recovery \
 
+# Crypto
+PRODUCT_PACKAGES += \
+    qcom_decrypt \
+    qcom_decrypt_fbe
+
 # FastbootD support
 PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.1-impl-mock \
@@ -153,52 +158,12 @@ TW_NO_SCREEN_BLANK          := true
 #PB
 PB_TORCH_PATH := "/sys/class/leds/led:torch_0"
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-TARGET_BOOTLOADER_BOARD_NAME := taro
-QCOM_BOARD_PLATFORMS += taro
-
 # A/B related packages
 ENABLE_AB := true
 ENABLE_VIRTUAL_AB := true
-
-
-# Suppot to compile recovery without msm headers
-TARGET_HAS_GENERIC_KERNEL_HEADERS := true
-
-# Userdata checkpoint
-PRODUCT_PACKAGES += \
-    checkpoint_gc
-
-# VNDK API
-
-# Board
-BOARD_SHIPPING_API_LEVEL := 31
-BOARD_API_LEVEL := 31
-SHIPPING_API_LEVEL := 31
-
-# Soong namespaces
-PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
-
 
 # otacert
 PRODUCT_EXTRA_RECOVERY_KEYS += \
     $(DEVICE_PATH)/security/releasekey
 
 BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
-# Copy modules for depmod
-#PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*.ko,$(DEVICE_PATH)/prebuilt,$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules)
