@@ -129,9 +129,9 @@ TW_LOAD_VENDOR_MODULES  += "adsp_loader_dlkm.ko qti_battery_charger.ko synaptics
 TW_EXCLUDE_DEFAULT_USB_INIT            := true
 TW_USE_SERIALNO_PROPERTY_FOR_DEVICE_ID := true
 
-TW_SUPPORT_INPUT_AIDL_HAPTICS         := true
-TW_SUPPORT_INPUT_AIDL_HAPTICS_FQNAME  := "IVibrator/vibratorfeature"
-TW_SUPPORT_INPUT_AIDL_HAPTICS_FIX_OFF := true
+TW_SUPPORT_INPUT_AIDL_HAPTICS          := true
+TW_SUPPORT_INPUT_AIDL_HAPTICS_FQNAME   := "IVibrator/vibratorfeature"
+TW_SUPPORT_INPUT_AIDL_HAPTICS_FIX_OFF  := true
 
 # TWRP - Crypto
 TW_INCLUDE_CRYPTO               := true
