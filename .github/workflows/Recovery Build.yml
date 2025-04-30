@@ -30,7 +30,7 @@ on:
       MAKEFILE_NAME:
         description: 'MAKEFILE_NAME'
         required: true
-        default: 'twrp_ziyi'
+        default: 'pb_ziyi'
       BUILD_TARGET:
         description: 'BUILD_TARGET'
         required: true
@@ -38,11 +38,11 @@ on:
       APPLYPATCH:
         description: 'Apply diff.patch (true or false)'
         required: true
-        default: 'no'
+        default: 'false'
         type: choice
         options:
-        - yes
-        - no
+        - true
+        - false
       
 jobs:
   build:
